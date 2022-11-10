@@ -1,0 +1,236 @@
+.whole-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 913px;
+  background-color: grey;
+}
+
+form {
+  width: 40%;
+  border: none solid;
+  background-color: white;
+  border-radius: 5px;
+  align-items: center;
+  padding-left: 45px;
+  margin-left: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.name {
+  font-size: 20px;
+  font-family: "Arial, Helvetica, sans-serifNew Roman";
+  font-weight: bold;
+}
+.name:after {
+  content: "*";
+  color: rgb(252, 6, 47);
+}
+
+.name-box {
+  width: 250px;
+  height: 26px;
+}
+
+.first .last {
+  font-family: "Arial, Helvetica, sans-serifNew Roman";
+  font-size: 15px;
+}
+
+.lastname-inputs {
+  padding-left: 21px;
+}
+
+.email-container {
+  margin-top: 15px;
+}
+
+.name-inputs {
+  display: flex;
+}
+
+.email {
+  font-size: 20px;
+  font-family: "Arial, Helvetica, sans-serifNew Roman";
+  font-weight: bold;
+}
+
+.email::after {
+  content: "*";
+  color: rgb(252, 6, 47);
+}
+
+.email-box {
+  width: 520px;
+  height: 26px;
+}
+
+.experience {
+  margin-top: 15px;
+}
+
+.exp {
+  font-size: 20px;
+  font-family: "Arial, Helvetica, sans-serifNew Roman";
+  font-weight: bold;
+}
+
+.exp:after {
+  content: "*";
+  color: rgb(252, 6, 47);
+}
+
+.overall {
+  font-family: "Arial, Helvetica, sans-serifNew Roman";
+  margin-top: -10px;
+}
+
+.how {
+  font-size: 20px;
+  font-family: "Arial, Helvetica, sans-serifNew Roman";
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+.how:after {
+  content: "*";
+  color: rgb(252, 6, 47);
+}
+
+.table1 {
+  margin-top: -20px;
+}
+
+.table2 {
+  margin-top: -20px;
+}
+
+#data-content th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+
+#data-content td,
+#data-content th {
+  text-align: center;
+  padding: 15px;
+}
+
+#data-content tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.howLike {
+  font-size: 20px;
+  font-family: "Arial, Helvetica, sans-serifNew Roman";
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.howLike:after {
+  content: "*";
+  color: rgb(252, 6, 47);
+}
+
+#data-content1 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+
+#data-content1 td,
+#data-content1 th {
+  text-align: center;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#data-content1 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.additional {
+  font-size: 20px;
+  font-family: "Arial, Helvetica, sans-serifNew Roman";
+  font-weight: bold;
+}
+.comment-box {
+  width: 690px;
+  height: 80px;
+}
+button {
+  border: none;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Arial, Helvetica, sans-serifNew Roman";
+}
+.rating {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  margin-top: -12px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: orange;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px orange;
+}
